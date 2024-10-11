@@ -1,5 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 25px;
+  overflow: auto;
 }
 
 h2,
@@ -40,9 +51,71 @@ nav a:hover {
   width: 200px;
 }
 
+.profileBdg {
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+}
+
 .card {
   box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   padding: 20px;
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #00c8eb;
+  text-align: center;
+  color: white;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: #00a2c6;
+  padding: 5px;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.profile header {
+  text-align: center;
+}
+
+#main-content {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding: 20px 0 20px 20px;
+}
+
+@media screen and (max-width: 1340px) {
+  #main-content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  aside {
+    margin-top: 20px;
+  }
 }
